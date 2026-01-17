@@ -54,4 +54,20 @@ Next while running all the usual tools to extract hidden messages and clue, zste
 ### **Part 3**
 
 On inspecting the readme, it's evident that there is a *zip bomb*.
-So i unzipped the rar file onto a folder. There were around 3000 qr codes, so i got started by scanning all the qr codes using a simple python automation script.
+So i unzipped the rar file onto a folder. There were around 3000 qr codes, so i got started by scanning all the qr codes using a simple [python automation script.](https://github.com/Friedlguana/gdg-cybersec/blob/main/script.py)
+
+![Screenshot](https://github.com/Friedlguana/gdg-cybersec/blob/main/Screenshots/Screenshot%202026-01-18%20005750.png?raw=true)
+
+This obviously gave a lot of noise so i rewrote the [script](https://github.com/Friedlguana/gdg-cybersec/blob/main/main.py) to filter out all invalid qr codes and this gave me a result:
+
+![Screenshot](https://github.com/Friedlguana/gdg-cybersec/blob/main/Screenshots/Screenshot%202026-01-18%20010945.png?raw=true)
+
+I then passed this result into cyberchef which spit out the decoded message from base64:
+
+![Screenshot](https://github.com/Friedlguana/gdg-cybersec/blob/main/Screenshots/Screenshot%202026-01-18%20011220.png?raw=true)
+
+- **3rd part of the Flag:** `gglol}`
+
+# Conclusion
+
+Combining all 3 parts we get a complete flag: `gdg{sw1ss_armykn1f3_gglol}`
