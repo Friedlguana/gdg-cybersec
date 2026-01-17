@@ -13,9 +13,9 @@
 - **Linux-based OS**  - Kali Linux
 - [**Cyberchef**](https://gchq.github.io/CyberChef/) - An Online AIO Data Analysis Tool
 ---
-### **Step 1: Analyzing files**
+### **Part 1**
 
-The first step I did was to read the README.txt in the first sub-folder
+The first step I did was to read the README.txt in the sub-folder
 
 
 ![Screenshot](https://raw.githubusercontent.com/Friedlguana/gdg-cybersec/refs/heads/main/Screenshots/Screenshot%202026-01-17%20130234.png)
@@ -35,3 +35,23 @@ On retrieval and inspection of the file, the first part of the flag was found.
 ![Screenshot](https://github.com/Friedlguana/gdg-cybersec/blob/main/Screenshots/Screenshot%202026-01-17%20134006.png?raw=true)
 
 - **1st part of the Flag:** `gdg{sw1ss_`
+---
+
+### **Part 2**
+
+The first step I did, again, was to read the README.txt in the sub-folder
+Readme hints at a hidden message, which is classic steganography
+
+Executing `strings heheheha.png` gives only noise, so the flag is not hidden in the image in plaintext.
+
+Next while running all the usual tools to extract hidden messages and clue, zsteg provided a string which turns out to be the second part of the flag.
+
+![Screenshot](https://github.com/Friedlguana/gdg-cybersec/blob/main/Screenshots/Screenshot%202026-01-17%20160156.png?raw=true)
+
+- **2nd part of the Flag:** `armykn1f3_`
+---
+
+### **Part 3**
+
+On inspecting the readme, it's evident that there is a *zip bomb*.
+So i unzipped the rar file onto a folder. There were around 3000 qr codes, so i got started by scanning all the qr codes using a simple python automation script.
