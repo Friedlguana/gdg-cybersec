@@ -9,10 +9,6 @@
 
 ---
 
-## Tools Used :
-- **Linux-based OS**  - Kali Linux
-- [**Cyberchef**](https://gchq.github.io/CyberChef/) - An Online AIO Data Analysis Tool
----
 ### **Part 1**
 
 The first step I did was to read the README.txt in the sub-folder
